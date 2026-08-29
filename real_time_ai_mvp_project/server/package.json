@@ -1,0 +1,24 @@
+{
+  "name": "@rt-mvp/server",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Gateway Server — WebSocket中継 / Markdown保存 / AI連携",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@rt-mvp/protocol": "*",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}

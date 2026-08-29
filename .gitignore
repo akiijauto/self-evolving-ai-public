@@ -1,0 +1,30 @@
+# 機密情報
+.env
+**/.env
+
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# IPA AI レポート収集: PDF 本体はサイズが大きいためコミットしない
+# (scripts/ipa_ai_reports/download.py で catalog.json から再取得できる)
+data/ipa-ai-reports/pdf/
+
+# Node。リポジトリ直下でテストを走らせるとキャッシュだけが残ることがある
+node_modules/
+.vite/
+
+# ローカルPCの絶対パス・棚卸し結果を含むためコミットしない
+context/backup/
+
+# バックテストの出力。実行のたびに上書きされる作業ファイルなので残さない。
+# ユニバース(tickers.csv)はGitHub Actions上でも読むためコミットする点に注意。
+backtest_result.csv
+investment_screener_project/backtest_result.csv
+
+# 公開データのダウンロードキャッシュ（スクリプトが再取得できる）
+scripts/ipa_ai_reports/.cache/
+
+# JPX公式の東証上場銘柄一覧（build_universe.py が再取得できる。約830KBのバイナリ）
+investment_screener_project/data/data_j.xls

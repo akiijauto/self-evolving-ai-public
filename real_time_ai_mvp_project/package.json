@@ -1,0 +1,16 @@
+{
+  "name": "realtime-ai-mvp",
+  "private": true,
+  "version": "0.2.0",
+  "description": "RealTime AI MVP Generator",
+  "workspaces": ["protocol", "server", "app"],
+  "scripts": {
+    "dev": "npm run dev --workspace server & npm run dev --workspace app",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

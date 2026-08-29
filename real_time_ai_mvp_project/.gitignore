@@ -1,0 +1,11 @@
+node_modules/
+dist/
+
+# Markdown Store の保存先(商談の内容が入る。リポジトリへは入れない)
+data/
+*.local
+.vite/
+
+# ローカル実行ログ(run_*.bat の出力。git管理下に置くとrebase中の書き込みが衝突する)
+*_result.txt
+_logs/

@@ -1,0 +1,137 @@
+name: 需要データ日次収集
+
+# 毎日 22:10 UTC(翌 7:10 JST)に実行する。
+# 収集元の多くが「前日分の確定値」を提供するため、日本時間の朝に前日の
+# データが揃った状態でレポートを読めるようにしている。
+on:
+  schedule:
+    - cron: "10 22 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "収集日(YYYY-MM-DD)。省略時は実行日のJST日付"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  # 同じ日に手動実行とスケジュール実行が重なると、同一ファイルへの二重追記と
+  # push衝突が起きるため直列化する。
+  group: demand-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 収集日を決める
+        id: target
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            echo "date=${{ inputs.date }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "date=$(TZ=Asia/Tokyo date +%F)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 実行対象と規約ガードの状態を表示
+        run: python scripts/demand_collect.py --date "${{ steps.target.outputs.date }}" --dry-run --allow-tier3
+
+      - name: 需要データを収集
+        # 一部の収集元が失敗しても、取れた分は保存してレポートまで進める。
+        # 失敗の有無は後続ステップで判定し、ジョブ全体の成否に反映する。
+        id: collect
+        continue-on-error: true
+        # --allow-tier3: 承認済みの Tier 3(coconala / kinokuniya / dlsite)も含める。
+        # フラグを付けても status が approved の収集元しか動かない(registry.check)。
+        run: python scripts/demand_collect.py --date "${{ steps.target.outputs.date }}" --allow-tier3 --summary-file "$RUNNER_TEMP/demand-collection-summary.json"
+
+      - name: Markdownレポートを生成
+        run: python scripts/demand_report.py --date "${{ steps.target.outputs.date }}"
+
+      - name: Notionへ反映
+        # NOTION_TOKEN が未設定の場合はスキップする。トークンを登録するまでは
+        # リポジトリ内にMarkdownが残るだけの状態で運用できる。
+        if: ${{ env.NOTION_TOKEN != '' }}
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
+        # --if-exists replace: 同じ日に2回動いても子ページを増やさず中身を入れ替える。
+        # 収集側が store.replace_source() で冪等なのに合わせている。
+        run: python scripts/demand_publish_notion.py --date "${{ steps.target.outputs.date }}" --if-exists replace
+
+      - name: 収集結果をコミット
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 需要収集の異常・急減シグナルも、次回の振り返りと判断基準生成へ渡す。
+          git add context/demand context/reports context/events.jsonl
+          if git diff --cached --quiet; then
+            echo "変更なし。コミットをスキップします。"
+            exit 0
+          fi
+          git commit -m "chore: 需要データ日次収集 ${{ steps.target.outputs.date }}"
+          # 手動実行とスケジュール実行が続けて走ると、後発のチェックアウトが古いまま
+          # push して弾かれる(実際に 2026-08-03 に発生した)。concurrency で直列化は
+          # されるが、チェックアウト時点のSHAは更新されないため rebase して押し直す。
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "push が弾かれました。リモートを取り込んで再試行します($attempt/3)"
+            git pull --rebase origin master || exit 1
+          done
+          echo "3回試しても push できませんでした。"
+          exit 1
+
+      - name: 収集結果を通知
+        if: steps.collect.outcome == 'failure'
+        env:
+          SUMMARY_FILE: ${{ runner.temp }}/demand-collection-summary.json
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          summary = json.loads(Path(os.environ["SUMMARY_FILE"]).read_text(encoding="utf-8"))
+          failures = summary["failed_sources"]
+          successes = summary["successful_sources"]
+          print(
+              "::warning title=需要データ収集は部分成功::"
+              f"{len(successes)}件の収集元から{summary['records_saved']}件を保存。"
+              f"{len(failures)}件は失敗しました。"
+          )
+          for failure in failures:
+              reason = failure["reason"].replace("\n", " ").replace("\r", " ")
+              print(
+                  f"::warning title=収集失敗: {failure['display_name']} ({failure['name']})::{reason}"
+              )
+
+          lines = [
+              "## 需要データ日次収集の結果",
+              "",
+              "| 状態 | 件数 |",
+              "| --- | ---: |",
+              f"| 成功した収集元 | {len(successes)} |",
+              f"| 保存データ数 | {summary['records_saved']} |",
+              f"| 失敗した収集元 | {len(failures)} |",
+              "",
+              "### 失敗した収集元",
+              "",
+              "| 収集元 | 理由 |",
+              "| --- | --- |",
+          ]
+          for failure in failures:
+              reason = failure["reason"].replace("\n", " ").replace("|", "\\|")
+              lines.append(f"| {failure['display_name']} (`{failure['name']}`) | {reason} |")
+          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as f:
+              f.write("\n".join(lines) + "\n")
+          PY

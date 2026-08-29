@@ -1,0 +1,305 @@
+{
+  "_readme": [
+    "世界の主要ソフトウェアシステムの登録簿。1エントリ=1システム(製品またはセグメント)。",
+    "",
+    "このファイルが日次収集(demand/sources.json)と分かれている理由:",
+    "  売上は四半期ごとの決算でしか動かず、日次で取りに行っても同じ値が返るだけ。",
+    "  毎日叩くのは相手のサーバにも自分のコストにも無駄なので、都度実行にしている。",
+    "  scripts/software_ranking.py は日次ワークフローに入れていない。",
+    "",
+    "revenue の扱い:",
+    "  すべて公開されている決算資料・IR発表が出典で、source_url に原典を残す。",
+    "  period はその金額が対象とする期間、as_of は出典が公表された時点。",
+    "  is_estimate=true は、四半期値からの年換算など、原典に年額の記載が無いもの。",
+    "  企業の決算期はそろっていない(Microsoftは6月期、Oracleは5月期、SAPは12月期)。",
+    "  厳密な同一期間の比較ではないため、順位は目安として読む。",
+    "",
+    "adoption_packages / job_keywords:",
+    "  採用量と求人の突き合わせに使う語。該当が無いシステムは空配列にする。",
+    "  空配列は「調べていない」ではなく「その軸では測れない」という意味。",
+    "  Windows や SAP のように公開パッケージ統計が存在しないものが該当する。",
+    "job_keywords には製品・ベンダー固有の語だけを入れる。security や crm のような一般語を入れると、その製品と無関係な求人まで数えてしまい、求人軸が実態から離れる。"
+  ],
+  "aws": {
+    "display_name": "Amazon Web Services",
+    "vendor": "Amazon",
+    "category": "クラウド基盤",
+    "revenue_usd_b": 168.9,
+    "period": "2026年Q2の四半期売上 42.23 を4倍した年換算",
+    "as_of": "2026-07-30",
+    "is_estimate": true,
+    "source_url": "https://www.cnbc.com/2026/07/30/aws-earnings-q2-2026.html",
+    "note": "四半期 42.23B(前年比 約37%増)。年換算のため実際の通期値とは差が出る。",
+    "adoption_packages": {
+      "npm": [
+        "aws-sdk"
+      ],
+      "pypi": [
+        "boto3"
+      ]
+    },
+    "job_keywords": [
+      "aws",
+      "amazon web services"
+    ]
+  },
+  "azure": {
+    "display_name": "Microsoft Azure",
+    "vendor": "Microsoft",
+    "category": "クラウド基盤",
+    "revenue_usd_b": 100.0,
+    "period": "FY2026(2025年7月〜2026年6月)",
+    "as_of": "2026-07-30",
+    "is_estimate": true,
+    "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+    "note": "FY2026に初めて年間1000億ドルを突破と発表。正確な内訳額は非開示のため下限値として扱う。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": [
+        "azure-core"
+      ]
+    },
+    "job_keywords": [
+      "azure"
+    ]
+  },
+  "microsoft_365": {
+    "display_name": "Microsoft 365 Commercial",
+    "vendor": "Microsoft",
+    "category": "SaaS(業務スイート)",
+    "revenue_usd_b": 74.1,
+    "period": "FY2026(2025年7月〜2026年6月)",
+    "as_of": "2026-07-30",
+    "is_estimate": false,
+    "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+    "note": "法人向けのみ。個人向け Microsoft 365 Consumer は含まない。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": []
+    },
+    "job_keywords": [
+      "microsoft 365",
+      "office 365",
+      "sharepoint"
+    ]
+  },
+  "google_cloud": {
+    "display_name": "Google Cloud",
+    "vendor": "Alphabet",
+    "category": "クラウド基盤",
+    "revenue_usd_b": 78.0,
+    "period": "直近1年(2025年Q3〜2026年Q2)",
+    "as_of": "2026-07-30",
+    "is_estimate": true,
+    "source_url": "https://tech-insider.org/google-cloud-82-percent-growth-aws-earnings-2026/",
+    "note": "2026年Q2の四半期売上は約25B(前年比 約82%増)。3社の中で成長率が突出している。",
+    "adoption_packages": {
+      "npm": [
+        "@google-cloud/storage"
+      ],
+      "pypi": [
+        "google-cloud-storage"
+      ]
+    },
+    "job_keywords": [
+      "gcp",
+      "google cloud",
+      "bigquery"
+    ]
+  },
+  "oracle_db_cloud": {
+    "display_name": "Oracle(Database + Cloud)",
+    "vendor": "Oracle",
+    "category": "DB / クラウド基盤",
+    "revenue_usd_b": 67.4,
+    "period": "FY2026(2025年6月〜2026年5月)",
+    "as_of": "2026-06-10",
+    "is_estimate": false,
+    "source_url": "https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/",
+    "note": "全社売上。うちクラウドが 34.0B(前年比39%増)。Databaseライセンス単体の内訳は非開示。",
+    "adoption_packages": {
+      "npm": [
+        "oracledb"
+      ],
+      "pypi": [
+        "oracledb"
+      ]
+    },
+    "job_keywords": [
+      "oracle",
+      "plsql",
+      "pl/sql"
+    ]
+  },
+  "salesforce": {
+    "display_name": "Salesforce",
+    "vendor": "Salesforce",
+    "category": "SaaS(CRM)",
+    "revenue_usd_b": 41.5,
+    "period": "FY2026(2025年2月〜2026年1月)",
+    "as_of": "2026-02-25",
+    "is_estimate": false,
+    "source_url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Fourth-Quarter-Fiscal-2026-Results/default.aspx",
+    "note": "前年比10%増。Agentforce と Data 360 が伸長要因と発表されている。",
+    "adoption_packages": {
+      "npm": [
+        "jsforce"
+      ],
+      "pypi": [
+        "simple-salesforce"
+      ]
+    },
+    "job_keywords": [
+      "salesforce",
+      "apex developer",
+      "sfdc"
+    ]
+  },
+  "sap": {
+    "display_name": "SAP(S/4HANA ほか)",
+    "vendor": "SAP",
+    "category": "ERP",
+    "revenue_usd_b": 40.0,
+    "period": "2025年(1月〜12月)",
+    "as_of": "2026-01-27",
+    "is_estimate": true,
+    "source_url": "https://news.sap.com/2026/01/sap-announces-q4-and-fy-2025-results/",
+    "note": "原典は €36.8B。ドル換算のため概算。うちクラウド売上 €21.0B が最大の収益源になった。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": [
+        "pyrfc"
+      ]
+    },
+    "job_keywords": [
+      "sap",
+      "abap",
+      "s/4hana"
+    ]
+  },
+  "ibm_software": {
+    "display_name": "IBM Software(Red Hat ほか)",
+    "vendor": "IBM",
+    "category": "ミドルウェア / OS",
+    "revenue_usd_b": 30.0,
+    "period": "2025年(1月〜12月)",
+    "as_of": "2026-01-28",
+    "is_estimate": true,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "note": "Softwareセグメント。前年比10.6%増で過去最大の伸び。ARRは23.6B。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": []
+    },
+    "job_keywords": [
+      "red hat",
+      "rhel",
+      "openshift",
+      "websphere",
+      "db2"
+    ]
+  },
+  "vmware": {
+    "display_name": "VMware(Broadcom Infrastructure Software)",
+    "vendor": "Broadcom",
+    "category": "仮想化基盤",
+    "revenue_usd_b": 28.7,
+    "period": "2026年Q2の四半期売上 7.18 を4倍した年換算",
+    "as_of": "2026-06-05",
+    "is_estimate": true,
+    "source_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial",
+    "note": "Infrastructure Softwareセグメント。VMware以外も含む。Broadcomの2番目に大きい事業。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": [
+        "pyvmomi"
+      ]
+    },
+    "job_keywords": [
+      "vmware",
+      "vsphere",
+      "esxi"
+    ]
+  },
+  "adobe_cc": {
+    "display_name": "Adobe(Creative Cloud ほか)",
+    "vendor": "Adobe",
+    "category": "SaaS(クリエイティブ)",
+    "revenue_usd_b": 25.2,
+    "period": "2025年6月〜2026年5月の12か月",
+    "as_of": "2026-06-12",
+    "is_estimate": false,
+    "source_url": "https://news.adobe.com/news/2026/03/adobe-q1fy26-financial-results",
+    "note": "前年比11.5%増。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": []
+    },
+    "job_keywords": [
+      "adobe",
+      "photoshop",
+      "creative cloud"
+    ]
+  },
+  "servicenow": {
+    "display_name": "ServiceNow",
+    "vendor": "ServiceNow",
+    "category": "SaaS(ITSM/業務自動化)",
+    "revenue_usd_b": 13.0,
+    "period": "2025年(1月〜12月)",
+    "as_of": "2026-01-28",
+    "is_estimate": true,
+    "source_url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results-Board-of-Directors-Authorizes-Additional-5B-for-Share-Repurchase-Program/default.aspx",
+    "note": "Q4のサブスクリプション売上 3.466B(前年比21%増)からの年換算。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": [
+        "pysnow"
+      ]
+    },
+    "job_keywords": [
+      "servicenow"
+    ]
+  },
+  "palo_alto": {
+    "display_name": "Palo Alto Networks",
+    "vendor": "Palo Alto Networks",
+    "category": "セキュリティ",
+    "revenue_usd_b": 9.2,
+    "period": "FY2025(2024年8月〜2025年7月)",
+    "as_of": "2025-08-18",
+    "is_estimate": false,
+    "source_url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-9",
+    "note": "前年比15%増。次世代セキュリティARRは5.6B(32%増)。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": [
+        "pan-os-python"
+      ]
+    },
+    "job_keywords": [
+      "palo alto",
+      "panw",
+      "prisma cloud",
+      "cortex xdr"
+    ]
+  },
+  "workday": {
+    "display_name": "Workday",
+    "vendor": "Workday",
+    "category": "SaaS(HR/財務)",
+    "revenue_usd_b": 8.4,
+    "period": "FY2025(2024年2月〜2025年1月)",
+    "as_of": "2025-02-25",
+    "is_estimate": false,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781125000040/wday-1312025x991.htm",
+    "note": "前年比16.4%増。FY2027のサブスク売上ガイダンスは9.93〜9.95B。",
+    "adoption_packages": {
+      "npm": [],
+      "pypi": []
+    },
+    "job_keywords": [
+      "workday"
+    ]
+  }
+}

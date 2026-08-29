@@ -1,0 +1,828 @@
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --border: #334155;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --danger: #f87171;
+  --warn: #fbbf24;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    system-ui,
+    -apple-system,
+    "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP",
+    sans-serif;
+  /* 商談で画面共有する前提のため、既定の文字を大きめにする */
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem calc(2rem + env(safe-area-inset-bottom));
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ── 録音中インジケータ(常時表示・最前面) ────────────── */
+
+.indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: calc(0.6rem + env(safe-area-inset-top)) 1.25rem 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.indicator-recording {
+  background: var(--danger);
+  color: #450a0a;
+}
+
+.indicator-paused {
+  background: var(--warn);
+  color: #451a03;
+}
+
+.indicator-label {
+  flex: 1;
+}
+
+.indicator-time {
+  font-variant-numeric: tabular-nums;
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+.dot-pulse {
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot-pulse {
+    animation: none;
+  }
+}
+
+/* インジケータ表示時に本文が隠れないよう余白を確保する */
+.app:has(.indicator) {
+  padding-top: 4.5rem;
+}
+
+/* ── ヘッダー ─────────────────────────────────── */
+
+.header h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ── 本体 ───────────────────────────────────── */
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.timer {
+  font-size: 3.5rem;
+  font-weight: 300;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* 使い方と合図の言葉。開始前に読み、録音が始まったら畳まれる */
+.usage {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 0.85rem 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.usage-summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.usage-steps {
+  margin: 0.75rem 0 0;
+  padding-left: 1.4rem;
+}
+
+.usage-steps li + li {
+  margin-top: 0.35rem;
+}
+
+.usage-phrases-title {
+  margin: 0.9rem 0 0.4rem;
+  color: var(--muted);
+}
+
+.usage-phrases {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.usage-phrase {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  background: var(--bg);
+  white-space: nowrap;
+}
+
+.usage-note {
+  margin: 0.9rem 0 0;
+  color: var(--warn);
+}
+
+.usage-build {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  /* 実機のタップ用に十分な高さを確保する */
+  min-height: 56px;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.btn:not(:disabled):active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #082f49;
+}
+
+.btn-danger {
+  background: transparent;
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-quiet {
+  background: transparent;
+  color: var(--muted);
+  min-height: 48px;
+  font-weight: 500;
+}
+
+/* ── 通知 ───────────────────────────────────── */
+
+.notice {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+}
+
+.notice-error {
+  border-color: var(--danger);
+}
+
+.notice-message {
+  margin: 0;
+}
+
+.notice-help {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ── 録音結果 ─────────────────────────────────── */
+
+.clip {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.15rem;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.clip-title {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.clip-audio {
+  width: 100%;
+}
+
+.clip-meta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+}
+
+.clip-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.clip-meta dt {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.clip-meta dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.clip-mime {
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+/* ── フッター ─────────────────────────────────── */
+
+.footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ── 接続状態(Sprint 2) ──────────────────────────── */
+
+.conn {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.conn-reconnecting {
+  border-color: var(--warn);
+}
+
+.conn-closed {
+  border-color: var(--danger);
+}
+
+.conn-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.conn-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--muted);
+  flex: none;
+}
+
+.conn-dot-ok {
+  background: #4ade80;
+}
+
+.conn-label {
+  font-weight: 600;
+}
+
+.conn-stats {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.conn-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.conn-note-warn {
+  color: var(--warn);
+}
+
+/* ── 文字起こし(Sprint 3) ────────────────────────── */
+
+.transcript {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.transcript-empty {
+  padding: 1.15rem;
+}
+
+.transcript-placeholder {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.transcript-body {
+  /* 商談中は直近が見えていればよい。長くなっても画面を占有させない */
+  max-height: 45dvh;
+  overflow-y: auto;
+  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.transcript-line {
+  margin: 0;
+  display: flex;
+  gap: 0.65rem;
+  align-items: baseline;
+}
+
+/* 未確定は薄字。確定していないことが一目で分かるようにする */
+.transcript-line-partial {
+  opacity: 0.55;
+}
+
+.transcript-speaker {
+  flex: none;
+  min-width: 2.2rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 6px;
+  background: var(--border);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.transcript-text {
+  flex: 1;
+}
+
+.transcript-note {
+  margin: 0;
+  padding: 0.75rem 1.15rem;
+  border-top: 1px solid var(--border);
+  color: var(--warn);
+  font-size: 0.85rem;
+}
+
+/* ── 生成されたMarkdown(Sprint 5) ───────────────── */
+
+.documents {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.documents-empty {
+  padding: 1.15rem;
+}
+
+.documents-placeholder {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.documents-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.documents-tab {
+  position: relative;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.documents-tab-active {
+  border-color: var(--border);
+  background: var(--border);
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* 未読の印。商談中に「今増えた」ことが分かるようにする */
+.documents-dot {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-left: 0.35rem;
+  border-radius: 50%;
+  background: var(--accent);
+  vertical-align: middle;
+}
+
+.documents-body {
+  max-height: 22rem;
+  overflow-y: auto;
+  padding: 0.9rem 1.15rem;
+}
+
+/* 手動修正(文字起こしの誤認識をその場で直す) */
+/* ドキュメントは顧客に画面共有で見せる本体。文字を絞らない */
+.documents-heading {
+  margin: 1rem 0 0.4rem;
+  font-size: 1.02rem;
+}
+
+.documents-heading:first-child {
+  margin-top: 0;
+}
+
+.documents-list {
+  margin: 0.2rem 0;
+  padding-left: 1.2rem;
+}
+
+.documents-item {
+  margin: 0.25rem 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.documents-check {
+  margin-right: 0.35rem;
+}
+
+.documents-paragraph {
+  margin: 0.3rem 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.documents-note {
+  margin: 0;
+  padding: 0.75rem 1.15rem;
+  border-top: 1px solid var(--border);
+  color: var(--warn);
+  font-size: 0.85rem;
+}
+
+/* ── トリガー確認 / 生成物(Sprint 6) ─────────────── */
+
+/* 顧客の前に出る。承認するまで何も始まらないことが分かる見た目にする */
+.trigger {
+  padding: 1.15rem;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.trigger-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.trigger-phrase {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.trigger-note {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.trigger-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.artifact {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.15rem;
+}
+
+.artifact-progress-title {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+.artifact-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.artifact-step {
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.artifact-step-done {
+  color: var(--text);
+}
+
+.artifact-step-current {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.artifact-title {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+}
+
+.artifact-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+  align-items: flex-start;
+}
+
+/* 白地のまま出す。暗い背景に反転して置くと読み取れない端末がある */
+.artifact-qr {
+  width: 11rem;
+  height: 11rem;
+  flex: none;
+  border-radius: 8px;
+}
+
+.artifact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 12rem;
+  flex: 1;
+}
+
+.artifact-links .btn {
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.artifact-hint,
+.artifact-expires {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.artifact-export {
+  align-self: flex-start;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.artifact-copy {
+  align-self: flex-start;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.artifact-failed {
+  margin: 0.6rem 0 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--warn);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.artifact-failed-reason {
+  margin: 0;
+  color: var(--warn);
+  font-weight: 600;
+}
+
+.artifact-failed-guide {
+  margin: 0.4rem 0 0;
+}
+
+.artifact-failed-detail {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  word-break: break-all;
+}
+
+.artifact-progress-elapsed {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 合図が拾われないときの手動開始 */
+.manual-generate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.manual-generate-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* Markdownの編集(誤認識の訂正) */
+.documents-edit {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 8px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 0.6rem;
+}
+
+.documents-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.documents-textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 0.7rem;
+  resize: vertical;
+}
+
+.documents-editor-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.documents-editor-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* 記録の持ち帰り。試作品の有無に関わらず出るので、生成結果とは別に置く */
+.session-export {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  margin: 1rem 0 0;
+}
+
+.session-export-hint {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* トリガー確認に出す議事録。長くてもボタンが画面から出ないように抑える */
+.trigger-summary {
+  max-height: 14rem;
+  overflow-y: auto;
+  margin: 0 0 0.9rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg, transparent);
+}
+
+.trigger-summary-title {
+  margin: 0 0 0.4rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}

@@ -1,0 +1,730 @@
+[
+  {
+    "url": "https://www.ipa.go.jp/archive/files/000067229.pdf",
+    "link_text": "AI社会実装推進調査報告書[2.07MB]",
+    "source_page": "https://www.ipa.go.jp/archive/digital/chousa/ai_20180619.html",
+    "source_title": "AI社会実装課題の調査と対策の方向性に関する報告書を公開 | アーカイブ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/archive/press/2023/t6hhco000000qjcl-att/press20230807.pdf",
+    "link_text": "デジタルスキル標準の改訂＜概要＞(PDF:443 KB)",
+    "source_page": "https://www.ipa.go.jp/archive/press/2023/press20230807.html",
+    "source_title": "プレス発表 生成AI関連の記載をデジタルスキル標準とITパスポート試験に追加 | アーカイブ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/begoj9000000d25w-att/ceatec2024-current-status-and-initiative-of-ai-in-japan.pdf",
+    "link_text": "Current Status and Initiative of AI in Japan(PDF:2.0 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/document.html",
+    "source_title": "AI関連の講演資料 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/begoj9000000d25w-att/ceatec2024-data-infrastructure-and-ecosystem-for-an-ai-society.pdf",
+    "link_text": "AI社会のためのデータ基盤やエコシステムの整備(PDF:2.7 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/document.html",
+    "source_title": "AI関連の講演資料 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/begoj9000000d25w-att/ceatec2024-how-to-walk-in-ai-society.pdf",
+    "link_text": "AI社会の歩き方(PDF:3.4 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/document.html",
+    "source_title": "AI関連の講演資料 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/nq6ept0000000ocj-att/ai-policy-trends.pdf",
+    "link_text": "世界のAIハブ（情報集約拠点）や政策動向（2023年12月現在）(PDF:11.5 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/trend.html",
+    "source_title": "AIに関する国内外の動向 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/nq6ept0000000ocj-att/ai-report.pdf",
+    "link_text": "DX白書2023等におけるAI関連データ(PDF:1.4 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/trend.html",
+    "source_title": "AIに関する国内外の動向 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/security/rcu1hd0000007gji-att/2-1_202603.pdf",
+    "link_text": "AIセキュリティ短信2026年3月号(PDF:818 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html",
+    "source_title": "AIセキュリティ短信 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/security/rcu1hd0000007gji-att/2-2-1_202507.pdf",
+    "link_text": "AIセキュリティ短信2025年7月号(PDF:633 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html",
+    "source_title": "AIセキュリティ短信 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/security/rcu1hd0000007gji-att/2-2-2_202509.pdf",
+    "link_text": "AIセキュリティ短信2025年9月号(PDF:644 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html",
+    "source_title": "AIセキュリティ短信 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/security/rcu1hd0000007gji-att/2-2-3_202512.pdf",
+    "link_text": "AIセキュリティ短信2025年12月号(PDF:640 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html",
+    "source_title": "AIセキュリティ短信 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/security/rcu1hd0000007gji-att/2026-1_0626.pdf",
+    "link_text": "AIセキュリティ短信2026年6月号(PDF:1.2 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html",
+    "source_title": "AIセキュリティ短信 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/ai/security/rcu1hd0000009h9u-att/1-1.pdf",
+    "link_text": "AI利用者のためのセキュリティ豆知識(PDF:2.0 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/ai/security/ai_security_tips.html",
+    "source_title": "AI利用者のためのセキュリティ豆知識 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/bgu0b10000005ipj-att/aiws1_20250324_keynote1_Sekine.pdf",
+    "link_text": "資料_基調講演1「大規模言語モデル（LLM）における安全性対策」(PDF:5.3 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/bgu0b10000005wya-att/aiws1_20250324_keynote2_Kidawara.pdf",
+    "link_text": "講演資料_基調講演2「生成AI時代の情報通信技術」(PDF:9.0 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/bgu0b10000005zuf-att/aiws1_20250324_panel1_Yoshida.pdf",
+    "link_text": "資料_パネル講演1「生成AI活用によるフロントラインワーカーの生産性向上」​(PDF:2.6 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/bgu0b10000005zv1-att/aiws1_20250324_panel2_Tanaka.pdf",
+    "link_text": "資料_パネル講演2「三菱電機のデジタル基盤”Serendie”における生成AI活用」​(PDF:4.7 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/bgu0b10000005zvn-att/aiws1_20250324_closing_Okumura.pdf",
+    "link_text": "資料_クロージング(PDF:1.1 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/bgu0b10000005zw1-att/aiws1_20250324_opening_Saito.pdf",
+    "link_text": "資料_開会挨拶(PDF:2.0 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/discussion-paper/j5u9nn000000abx5-att/dx2025_digital_talent_ai_era.pdf",
+    "link_text": "AI時代のデジタル人材育成(PDF:954 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/discussion-paper/dx2025_digital_talent_ai_era.html",
+    "source_title": "DX動向2025-AI時代のデジタル人材育成 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-2026.pdf",
+    "link_text": "DX動向2026（本文）(PDF:6.1 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/dx-trend/dx-trend-2026.html",
+    "source_title": "「DX動向2026」広がるAI導入、DXは変われるか | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/dx-trend/rcu1hd0000017uk8-att/dx-trend-data-collection-2026.pdf",
+    "link_text": "DX動向2026（データ集）(PDF:7.1 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/dx-trend/dx-trend-2026.html",
+    "source_title": "「DX動向2026」広がるAI導入、DXは変われるか | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/j5u9nn0000009qnw-att/aiws3_20250911_opening_Saitou.pdf",
+    "link_text": "資料_開会挨拶(PDF:1.1 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/j5u9nn0000009r68-att/aiws3_20250911_keynote1_Inoue.pdf",
+    "link_text": "資料 基調講演1 「医療・ヘルスケア業界における生成AIの取組～効果的かつ安心な生成AIの活用に向けて」(PDF:3.3 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/j5u9nn0000009r6m-att/aiws3_20250911_closing_Okumura.pdf",
+    "link_text": "資料_開会挨拶(PDF:1.1 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/j5u9nn0000009rgh-att/aiws3_20250911_keynote2_Kakizaki.pdf",
+    "link_text": "資料 基調講演2 「日本のヘルスケア分野におけるLLMの現状と課題」(PDF:5.8 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/j5u9nn000000a5wh-att/aiws3_20250911_keynote3_Imai.pdf",
+    "link_text": "資料 基調講演3 「大規模言語モデルの医療現場での活用と展望」(PDF:4.6 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/j5u9nn000000a5z6-att/aiws3_20250911_event_report.pdf",
+    "link_text": "開催報告（議事録）(PDF:819 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/j5u9nn000000ddkt-att/AI_WS4_leaflet.pdf",
+    "link_text": "AI共生型社会実現促進ワークショップ(第4回)開催案内(PDF:752 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai_ws4.html",
+    "source_title": "第4回AI共生型社会実現促進ワークショップ開催案内 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nl10bi0000006cgq-att/aiws1_20250324_event_report.pdf",
+    "link_text": "開催報告（議事録）(PDF:675 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nl10bi000000974s-att/bgu0b10000006sew.pdf",
+    "link_text": "AI共生型社会実現促進ワークショップ(第2回)開催案内(PDF:743 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai_ws2.html",
+    "source_title": "第2回AI共生型社会実現促進ワークショップ開催案内 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de1-memberlist.pdf",
+    "link_text": "第1回構成員名簿(PDF:245 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de1-summary.pdf",
+    "link_text": "第1回議事要旨(PDF:358 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de2-memberlist.pdf",
+    "link_text": "第2回構成員名簿(PDF:249 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de2-summary.pdf",
+    "link_text": "第2回議事要旨(PDF:412 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de3-memberlist.pdf",
+    "link_text": "第3回構成員名簿(PDF:260 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de3-summary.pdf",
+    "link_text": "第3回議事要旨(PDF:444 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de4-memberlist.pdf",
+    "link_text": "第4回構成員名簿(PDF:227 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de4-summary.pdf",
+    "link_text": "第4回議事要旨(PDF:354 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de5-memberlist.pdf",
+    "link_text": "第5回構成員名簿(PDF:243 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de5-summary.pdf",
+    "link_text": "第5回議事要旨(PDF:511 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de6-memberlist.pdf",
+    "link_text": "第6回構成員名簿(PDF:239 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de6-summary.pdf",
+    "link_text": "第6回議事要旨(PDF:439 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de7-memberlist.pdf",
+    "link_text": "第7回構成員名簿(PDF:249 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de7-summary.pdf",
+    "link_text": "第7回議事要旨(PDF:418 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de8-memberlist.pdf",
+    "link_text": "第8回構成員名簿(PDF:247 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/nq6ept000000gr73-att/de8-summary.pdf",
+    "link_text": "第8回議事要旨(PDF:517 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/digital-ecosystem.html",
+    "source_title": "国内外デジタル化動向を踏まえたAI・デジタルエコシステムのあり方に関する検討会 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/oe70p10000003566-att/AI_WS_leaflet.pdf",
+    "link_text": "第1回AI共生型社会実現促進ワークショップ開催案内(PDF:709 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai_ws.html",
+    "source_title": "第1回AI共生型社会実現促進ワークショップ開催案内 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/omgdg50000003iud-att/aiws4_20251202_keynote1_Koshizuka.pdf",
+    "link_text": "東京大学大学院情報学環 教授 越塚 登 氏(PDF:22.0 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/omgdg50000003iur-att/aiws4_20251202_keynote2_Kuba.pdf",
+    "link_text": "デジタル庁国民向けサービスグループ・企画官（教育班担当） 久芳 全晴 氏(PDF:6.0 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/omgdg50000003iv5-att/aiws4_20251202_keynote3_Kuniyoshi.pdf",
+    "link_text": "一般社団法人Generative AI Japan 発起人・業務執行理事・事務局長／ 株式会社ベネッセコーポレーション データソリューション部 部長 國吉 啓介 氏(PDF:2.5 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/omgdg50000003ivj-att/aiws4_20251202_closing_Okumura.pdf",
+    "link_text": "IPA 理事 奥村 明俊(PDF:1.4 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/omgdg50000004yy1-att/aiws4_20251202_event_report.pdf",
+    "link_text": "開催報告（議事録）(PDF:802 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/tbl5kb0000004yuf-att/aiws2_20250619_opening_Saitou.pdf",
+    "link_text": "資料_開会挨拶(PDF:1.7 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/tbl5kb0000004z8v-att/aiws2_20250619_keynote3_Domae.pdf",
+    "link_text": "講演資料_基調講演3「大規模データに基づくロボット基盤モデル」(PDF:4.9 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/tbl5kb0000005of7-att/aiws2_20250619_keynote2_Nakadai.pdf",
+    "link_text": "講演資料_基調講演2「ドローンから広がる自律モビリティ交通管理の未来」(PDF:3.0 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/tbl5kb0000005oft-att/aiws2_20250619_keynote1_Sekiya.pdf",
+    "link_text": "資料_基調講演1「AI-driven Autonomous Farmingを実現するCognitive Support System 構想」(PDF:6.1 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/tbl5kb0000005ogf-att/aiws2_20250619_closing_Okumura.pdf",
+    "link_text": "資料_クロージング(PDF:1.2 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/tbl5kb0000005ohv-att/aiws2_20250619_event_report_.pdf",
+    "link_text": "開催報告（議事録）(PDF:789 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai-ws-top.html",
+    "source_title": "AI共生型社会実現促進ワークショップ | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/tbl5kb0000008ci7-att/AI_WS3_leaflet.pdf",
+    "link_text": "AI共生型社会実現促進ワークショップ(第3回)開催案内(PDF:752 KB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/ai_ws3.html",
+    "source_title": "第3回AI共生型社会実現促進ワークショップ開催案内 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/digital/chousa/trend/ai-technologies/f55m8k0000007bdz-att/000098829.pdf",
+    "link_text": "自然言語処理技術の進化：AI による「ことば」の処理から汎用 AI へ最近の動向について(PDF:4.0 MB)",
+    "source_page": "https://www.ipa.go.jp/digital/chousa/trend/ai-technologies/ai.html",
+    "source_title": "自然言語処理技術の進化  AIによる「ことば」の処理から汎用AIへ 最新の動向について | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/disc/committee/eid2eo00000036bq-att/software-modernization-comittee-20250331-report.pdf",
+    "link_text": "ソフトウェモダナイゼーション委員会報告書",
+    "source_page": "https://www.ipa.go.jp/digital/kaihatsu/sds-column/ai-agent.html",
+    "source_title": "SDS技術コラム：AIエージェント | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/jinzai/ics/core_human_resource/final_project/2022/ngi93u0000002jj0-att/000099871.pdf",
+    "link_text": "セキュリティ関係者のためのAIハンドブック(PDF:2.9 MB)",
+    "source_page": "https://www.ipa.go.jp/jinzai/ics/core_human_resource/final_project/2022/AI-handbook.html",
+    "source_title": "セキュリティ関係者のためのAIハンドブック | デジタル人材の育成 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/jinzai/ics/core_human_resource/final_project/2024/f55m8k0000003spo-att/f55m8k0000003svn.pdf",
+    "link_text": "テキスト生成AIの導入・運用ガイドライン(PDF:6.2 MB)",
+    "source_page": "https://www.ipa.go.jp/jinzai/ics/core_human_resource/final_project/2024/generative-ai-guideline.html",
+    "source_title": "テキスト生成AIの導入・運用ガイドライン | デジタル人材の育成 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/pressrelease/2026/rcu1hd0000016yh4-att/press20260716.pdf",
+    "link_text": "国際・産業調査部_DX動向2026調査のポイント(PDF:922 KB)",
+    "source_page": "https://www.ipa.go.jp/pressrelease/2026/press20260716.html",
+    "source_title": "プレス発表 国内企業のDX動向・AI活用動向のポイントを公表 | プレスリリース | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000060747.pdf",
+    "link_text": "AI白書2017書籍版サンプル(PDF:5.2 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000060841.pdf",
+    "link_text": "プレスリリース全文(PDF:170 KB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000082705.pdf",
+    "link_text": "表紙～第1章　技術動向-前半(PDF:11.6 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000082706.pdf",
+    "link_text": "第1章　技術動向-後半(PDF:9.1 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000082707.pdf",
+    "link_text": "第2章　利用動向(PDF:7.6 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000082708.pdf",
+    "link_text": "第3章　制度的課題への対応動向(PDF:7.8 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000082709.pdf",
+    "link_text": "第4章　政策動向(PDF:7.5 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000082710.pdf",
+    "link_text": "資料編～奥付(PDF:5.0 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w2c-att/000082711.pdf",
+    "link_text": "ダウンロード(PDF:41.0 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2017.html",
+    "source_title": "AI白書2017 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000069695.pdf",
+    "link_text": "プレスリリース全文（2018年10月30日）(PDF:228 KB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000070279.pdf",
+    "link_text": "サンプル(PDF:3.6 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000088596.pdf",
+    "link_text": "表紙～第1章　表紙～第1章　AIが壊すもの、創るもの(PDF:6.9 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000088597.pdf",
+    "link_text": "第2章　技術動向-前半(PDF:4.6 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000088598.pdf",
+    "link_text": "第2章　技術動向-後半(PDF:4.1 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000088599.pdf",
+    "link_text": "第3章　利用動向(PDF:5.2 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000088600.pdf",
+    "link_text": "第4章　制度政策動向(PDF:5.4 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000088601.pdf",
+    "link_text": "第5章　AIの社会実装課題と対策～奥付(PDF:4.4 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w5z-att/000088602.pdf",
+    "link_text": "ダウンロード(PDF:16.5 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2019.html",
+    "source_title": "AI白書2019 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w9m-att/000080401.pdf",
+    "link_text": "サンプル(PDF:3.1 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2020.html",
+    "source_title": "AI白書2020 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w9m-att/000080421.pdf",
+    "link_text": "プレスリリース全文（2020年2月26日）(PDF:268 KB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2020.html",
+    "source_title": "AI白書2020 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w9m-att/000086719.pdf",
+    "link_text": "修正済みグラフ掲載ページ（p.308、p.312、p.316）(PDF:207 KB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2020.html",
+    "source_title": "AI白書2020 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp0000000w9m-att/000086720.pdf",
+    "link_text": "正誤表（PDF:196KB）",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/ai2020.html",
+    "source_title": "AI白書2020 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp000000123o-att/000074366.pdf",
+    "link_text": "実装環境の評価に向けた調査報告書(2019)(PDF:3.2 MB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/index.html",
+    "source_title": "AI白書 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/publish/wp-ai/qv6pgp000000123o-att/000074367.pdf",
+    "link_text": "米国ピッツバーグにおけるエコシステム調査報告書(2019)(PDF:892 KB)",
+    "source_page": "https://www.ipa.go.jp/publish/wp-ai/index.html",
+    "source_title": "AI白書 | 書籍・刊行物 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/eid2eo00000022sn-att/appendix.pdf",
+    "link_text": "別冊(PDF:1.4 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20240704.html",
+    "source_title": "IPAテクニカルウォッチ「AI利用時のセキュリティ脅威・リスク調査報告書」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/eid2eo00000022sn-att/report.pdf",
+    "link_text": "レポート本文(PDF:2.0 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20240704.html",
+    "source_title": "IPAテクニカルウォッチ「AI利用時のセキュリティ脅威・リスク調査報告書」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/j5u9nn000000c1rd-att/AI_Explanation_Survey_2025.pdf",
+    "link_text": "【テクニカルウォッチ】2025年度AIの説明に関する意識調査レポート(PDF:2.0 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20251023.html",
+    "source_title": "IPAテクニカルウォッチ「AIの動作・分析・利用方法の説明に関するアンケート調査レポート」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/j5u9nn000000c1rd-att/AI_Explanation_Survey_2025_Appendix01_Questionnaire.pdf",
+    "link_text": "【付録1】2025年度AIの説明に関する意識調査・調査票(PDF:1.2 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20251023.html",
+    "source_title": "IPAテクニカルウォッチ「AIの動作・分析・利用方法の説明に関するアンケート調査レポート」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/j5u9nn000000c1rd-att/AI_Explanation_Survey_2025_Appendix02_GrandTotalTable.pdf",
+    "link_text": "【付録2】2025年度AIの説明に関する意識調査・単純集計データ(PDF:580 KB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20251023.html",
+    "source_title": "IPAテクニカルウォッチ「AIの動作・分析・利用方法の説明に関するアンケート調査レポート」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/m42obm000000hzkm-att/2024_IPA_Report1_FINAL_forPublic.pdf",
+    "link_text": "レポート本文(PDF:1.9 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20240530.html",
+    "source_title": "IPAテクニカルウォッチ「米国におけるAIのセキュリティ脅威・リスクの認知調査レポート」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/m42obm000000hzkm-att/2024_IPA_Report1_Japanese_Sumarry.pdf",
+    "link_text": "レポート概要(PDF:1.3 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20240530.html",
+    "source_title": "IPAテクニカルウォッチ「米国におけるAIのセキュリティ脅威・リスクの認知調査レポート」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/rcu1hd000000u4q7-att/AIoperation_analysis_use_survey.pdf",
+    "link_text": "【テクニカルウォッチ】AIの動作・分析・利用等の説明に関する意識調査(PDF:1.8 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20260601.html",
+    "source_title": "IPAテクニカルウォッチ「AIの動作・分析・利用等の説明に関する意識調査」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/rcu1hd000000u4q7-att/appendix1_AIsurvey_question.pdf",
+    "link_text": "【付録1】2026年度AIの説明に関する意識調査・調査票v1(PDF:320 KB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20260601.html",
+    "source_title": "IPAテクニカルウォッチ「AIの動作・分析・利用等の説明に関する意識調査」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/rcu1hd000000u4q7-att/appendix2_AIsurvey_data.pdf",
+    "link_text": "【付録2】2026年度AIの説明に関する意識調査・単純集計データ(PDF:225 KB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20260601.html",
+    "source_title": "IPAテクニカルウォッチ「AIの動作・分析・利用等の説明に関する意識調査」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/sbn8o10000002g2e-att/IPAPhase2Report.pdf",
+    "link_text": "レポート本文(PDF:3.3 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20241223.html",
+    "source_title": "IPAテクニカルウォッチ「AIに起因する選挙リスクとAIガバナンス米国調査レポート」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/security/reports/technicalwatch/sbn8o10000002g2e-att/NextPeakReport.pdf",
+    "link_text": "レポート概要(PDF:1.3 MB)",
+    "source_page": "https://www.ipa.go.jp/security/reports/technicalwatch/20241223.html",
+    "source_title": "IPAテクニカルウォッチ「AIに起因する選挙リスクとAIガバナンス米国調査レポート」 | 情報セキュリティ | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/shiken/syllabus/t6hhco000000p2y8-att/syllabus_ip_ver6_2.pdf",
+    "link_text": "「ITパスポート試験 シラバス」Ver. 6.2(PDF:870 KB)",
+    "source_page": "https://www.ipa.go.jp/shiken/syllabus/henkou/2023/20230807.html",
+    "source_title": "ITパスポート試験におけるシラバスの一部改訂について（生成AIに関する項目・用語例の追加など） | 試験情報 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/shiken/syllabus/t6hhco000000p7kt-att/syllabus_ip_ver6_2_henkou.pdf",
+    "link_text": "「ITパスポート試験 シラバス」Ver. 6.2（変更箇所表示版）(PDF:879 KB)",
+    "source_page": "https://www.ipa.go.jp/shiken/syllabus/henkou/2023/20230807.html",
+    "source_title": "ITパスポート試験におけるシラバスの一部改訂について（生成AIに関する項目・用語例の追加など） | 試験情報 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  },
+  {
+    "url": "https://www.ipa.go.jp/shiken/syllabus/t6hhco000000wyrz-att/ip_generativeai_sample.pdf",
+    "link_text": "「ITパスポート試験 生成AIに関するサンプル問題」(PDF:85 KB)",
+    "source_page": "https://www.ipa.go.jp/shiken/syllabus/henkou/2023/20230807.html",
+    "source_title": "ITパスポート試験におけるシラバスの一部改訂について（生成AIに関する項目・用語例の追加など） | 試験情報 | IPA 独立行政法人 情報処理推進機構",
+    "ai_related": true
+  }
+]
